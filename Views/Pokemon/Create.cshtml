@@ -1,0 +1,63 @@
+﻿@model Poke.Models.TrainerM
+
+@{
+    ViewData["Title"] = "New Trainer";
+}
+<h1>Register Now !</h1>
+<h3>Keep your pokedex safe</h3>
+<hr />
+<div class="card">
+            <div class="card-body">
+              <h5 class="card-title"> Insert your credentials </h5>
+              <!-- No Labels Form -->
+              <form class="row g-3" asp-action="Create" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                  <div class="col-md-9">
+                  <input asp-for="Name" class="form-control" placeholder="Your Name">
+                  <span asp-validation-for="Name" class="text-danger"></span>
+              </div>
+                <div class="col-md-3">
+                  <input asp-for="Age" type="number" class="form-control" placeholder="Age">
+                   <span asp-validation-for="Age" class="text-danger"></span>  
+              </div>     
+               <div class="col-md-4">
+                  <input asp-for="Gender" type="text" maxlength="2" class="form-control" placeholder="Gender: M/F">
+                  <span asp-validation-for="Gender" class="text-danger"></span>
+                </div>
+                <div class="col-6">
+                  <input asp-for="Hometown" type="text" class="form-control" placeholder="Hometown">
+                   <span asp-validation-for="Hometown" class="text-danger"></span>
+                </div>
+                <div class="col-md-6">
+                  <input asp-for="Region" type="text" class="form-control" placeholder="Region">
+                   <span asp-validation-for="Region" class="text-danger"></span>
+                </div>
+                <div class="col-md-6">
+                  <input asp-for="Password" type="password" maxlength="9" class="form-control" placeholder="Password">
+                   <span asp-validation-for="Password" class="text-danger"></span>
+                </div>               
+                <div class="col-md-5">
+                  <input asp-for="Picture" type="file" name="Img" id="Img" class="form-control" placeholder="Picture">
+                  <span asp-validation-for="Picture" class="text-danger"></span>
+                </div>
+                <div class="text-center" >
+                  <input type="submit" value="Submit" class="btn btn-success" />
+                  <input type="reset"  class="btn btn-primary" />
+                  <a class="btn btn-secondary" asp-action="Home1">Back</a>
+                </div>
+              </form><!-- End No Labels Form -->
+
+            </div>
+          </div>
+    <style>
+
+header.header{
+    background-color: rgb(238, 9, 49);
+}
+ h1, h6, a, input, label, h3
+{
+    font-family: PoKeSolid;
+    color: rgb(19, 17, 18);
+}
+
+</style>

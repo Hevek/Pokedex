@@ -1,0 +1,121 @@
+﻿@model IEnumerable<Poke.Models.PokeM>
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+<h1>Welcome Back Trainer!</h1>
+<p>
+    <h5><a asp-action="CreateP">Add a new Pokemon !</a></h5>
+    <h5><a asp-action="Create">Register your ID !</a></h5>
+</p>
+
+
+
+<style>
+
+body{
+    background-color: rgb(179, 0, 27);
+}
+
+header.header{
+    background-color: rgb(238, 9, 49);
+}
+
+aside.sidebar{
+   background-color: rgb(79, 178, 134);
+}
+
+a.nav-item{
+    background-color: rgb(72, 171, 9);
+}
+
+h5{
+    font-family: PoKeSolid;
+    color: black;
+}
+
+</style>
+
+<div class="col-lg-8">
+          <div class="row">
+            <!-- Card -->
+            <div class="col-xxl-4 col-md-6">
+              <div class="card info-card sales-card">
+                <div class="card-body">
+                  <h5 class="card-title">Pokemons <span>| Stored</span></h5>
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <img src="~/assets/img/pb2.gif" width="50px" />
+                    </div>
+                    <div class="ps-3">
+                      <h6>145</h6>
+                      <span class="text-success small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">increase</span>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End Card -->
+
+            <!-- Card -->
+            <div class="col-xxl-4 col-md-6">
+              <div class="card info-card sales-card">
+                <div class="card-body">
+                  <h5 class="card-title">Items <span>| All</span></h5>
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                     <img src="~/assets/img/bagM.png" width="50px" />
+                    </div>
+                    <div class="ps-3">
+                      <h6>160</h6>
+                      <span class="text-success small pt-1 fw-bold">+10</span> <span class="text-muted small pt-2 ps-1">today</span>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End Card -->
+
+          </div>
+        </div><!-- End Left side columns -->
+
+
+
+<!-- Row cards top image-->  
+<div class="row d-flex" height="350px" width="350px">
+                    @foreach(var item in Model)
+                    {
+
+    <div class="col-md-3" height="350px" width="350px">
+        <div class="card">
+            <!-- img src="~/assets/img/pkgr.png" class="card-img-top" alt="..." --> 
+            <div class="card-body">
+                
+                        @try
+                        {
+                            var base64 = Convert.ToBase64String(@item.PictureP);
+                            if(!string.IsNullOrEmpty(base64))
+                            {
+                                var img = String.Format("data:image/png;base64,{0}", base64);
+                                <img class="img-fluid" src="@img" style="max-width: 100%;" />
+                            }
+                          
+                        }
+                        catch
+                        {
+                            <img class="img-fluid" src="http://www.puspfc.usp.br/sistemas/prefeitura/imgs/sem_foto.png" width="100" />
+                        }
+                               <h5> Name: @item.PokeN </h5>                                                           
+                    <button type="button" class="btn btn-info"><a  asp-action="DetailsPokemon" asp-route-id="@item.IdP" class="bi bi-info-circle"> Details</a></button>
+                    <button type="button" class="btn btn-danger"><a asp-action="DeletePokemon" asp-route-id="@item.IdP" class="bi bi-exclamation-octagon"> Delete</a></button>
+                    <button type="button" class="btn btn-warning" style="margin-top: 10px"><a asp-action="EditPokemon" asp-route-id="@item.IdP" class="bi bi-exclamation-triangle"> Edit</a></button>
+                    
+            </div>
+        </div>
+    </div>
+
+                       }
+                       </div>
