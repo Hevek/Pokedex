@@ -1,0 +1,111 @@
+﻿    @model Poke.Models.PokeM
+@{
+    ViewData["Title"] = "DetailsPokemon";
+}
+<h1> ID Details Pokemon</h1>
+<hr />
+<div class="card">
+    <div class="card-body">
+        <form class="row g-3" asp-action="CreateP" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="col-md-4">
+                <label asp-for="PokeN" class="control-label"></label>
+                <input asp-for="PokeN" class="form-control" readonly/>
+                <span asp-validation-for="PokeN" class="text-danger"></span>
+            </div>
+            <div class="col-md-3">
+                <label asp-for="TypeP" class="control-label"></label>
+                <input asp-for="TypeP" class="form-control" readonly/>
+                <span asp-validation-for="TypeP" class="text-danger"></span>
+            </div>
+            <div class="col-md-1">
+                <label asp-for="Height" class="control-label"></label>
+                <input asp-for="Height" class="form-control"readonly />
+                <span asp-validation-for="Height" class="text-danger"></span>
+            </div>
+            <div class="col-md-1">
+                <label asp-for="Weight" class="control-label"></label>
+                <input asp-for="Weight" class="form-control" readonly/>
+                <span asp-validation-for="Weight" class="text-danger"></span>
+            </div>
+            <div class="col-md-3">
+                <label asp-for="Ability" class="control-label"></label>
+                <input asp-for="Ability" class="form-control" readonly/>
+                <span asp-validation-for="Ability" class="text-danger"></span>
+            </div>
+            <div class="col-md-3">
+                <label asp-for="HP" class="control-label"></label>
+                <input asp-for="HP" class="form-control" readonly/>
+                <span asp-validation-for="HP" class="text-danger"></span>
+            </div>
+             <div class="col-md-1">
+                <label asp-for="Atk" class="control-label"></label>
+                <input asp-for="Atk" class="form-control" readonly/>
+                <span asp-validation-for="Atk" class="text-danger"></span>
+            </div>
+            <div class="col-md-1">
+                <label asp-for="Def" class="control-label"></label>
+                <input asp-for="Def" class="form-control" readonly/>
+                <span asp-validation-for="Def" class="text-danger"></span>
+            </div>
+            <div class="col-md-1">
+                <label asp-for="SpDef" class="control-label"></label>
+                <input asp-for="SpDef" class="form-control" readonly />
+                <span asp-validation-for="Def" class="text-danger"></span>
+            </div>
+            <div class="col-md-1">
+                <label asp-for="SpAtk" class="control-label"></label>
+                <input asp-for="SpAtk" class="form-control" readonly />
+                <span asp-validation-for="SpAtk" class="text-danger"></span>
+            </div>
+            <div class="col-md-1">
+                <label asp-for="SpDef" class="control-label"></label>
+                <input asp-for="SpDef" class="form-control" readonly/>
+                <span asp-validation-for="SpDef" class="text-danger"></span>
+            </div>
+            <div class="col-md-1">
+                <label asp-for="Speed" class="control-label"></label>
+                <input asp-for="Speed" class="form-control" readonly/>
+                <span asp-validation-for="Speed" class="text-danger"></span>
+            </div>
+            <div class="col-md-2">
+                <label asp-for="GenderP" class="control-label"></label>
+                <input asp-for="GenderP" class="form-control" readonly />
+                <span asp-validation-for="GenderP" class="text-danger"></span>
+            </div>
+             <div class="col-md-12" style="margin-top:15px">
+                        @{
+                            try
+                            {
+                                var base64 = Convert.ToBase64String(Model.PictureP);
+                                if(!string.IsNullOrEmpty(base64))
+                                {
+                                    var Img = String.Format("data:image/png;base64,{0}", base64);
+                                    <img class="img-fluid" src="@Img" width="300" />
+                                }
+                            }
+                            catch
+                            {
+                                <img class="img-fluid" src="http://www.puspfc.usp.br/sistemas/prefeitura/imgs/sem_foto.png" width="150" style="margin-top:15px"/>
+                            }
+                        }
+            </div>
+            <div class="form-group" style="margin-top:15px">
+                <button type="button"  class="btn btn-info"><a class="bi bi-arrow-left-circle-fill" asp-action="Home1">  Back</a></button>
+            </div>
+        </form>
+    </div>
+    <style>
+
+header.header{
+    background-color: rgb(238, 9, 49);
+}
+ h1, h6, a, input, label, h3
+{
+    font-family: PoKeSolid;
+    color: rgb(19, 17, 18);
+}
+
+</style>
+
+</div>

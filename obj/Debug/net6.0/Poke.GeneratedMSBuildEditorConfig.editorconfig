@@ -1,0 +1,76 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Poke
+build_property.RootNamespace = Poke
+build_property.ProjectDir = C:\Users\Starponto\Desktop\My_Pokedex-main\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Starponto\Desktop\My_Pokedex-main
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Starponto/Desktop/My_Pokedex-main/Views/Pokemon/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vblxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Starponto/Desktop/My_Pokedex-main/Views/Pokemon/CreateP.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vblxDcmVhdGVQLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Starponto/Desktop/My_Pokedex-main/Views/Pokemon/DeletePokemon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vblxEZWxldGVQb2tlbW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Starponto/Desktop/My_Pokedex-main/Views/Pokemon/DeleteTrainer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vblxEZWxldGVUcmFpbmVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Starponto/Desktop/My_Pokedex-main/Views/Pokemon/DetailsPokemon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vblxEZXRhaWxzUG9rZW1vbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Starponto/Desktop/My_Pokedex-main/Views/Pokemon/DetailsTrainer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vblxEZXRhaWxzVHJhaW5lci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Starponto/Desktop/My_Pokedex-main/Views/Pokemon/EditPokemon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vblxFZGl0UG9rZW1vbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Starponto/Desktop/My_Pokedex-main/Views/Pokemon/EditTrainers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vblxFZGl0VHJhaW5lcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Starponto/Desktop/My_Pokedex-main/Views/Pokemon/Home1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vblxIb21lMS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Starponto/Desktop/My_Pokedex-main/Views/Pokemon/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Starponto/Desktop/My_Pokedex-main/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Starponto/Desktop/My_Pokedex-main/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Starponto/Desktop/My_Pokedex-main/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Starponto/Desktop/My_Pokedex-main/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Starponto/Desktop/My_Pokedex-main/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-5yl9u0i7jy

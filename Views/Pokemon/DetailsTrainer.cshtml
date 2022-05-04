@@ -1,0 +1,71 @@
+﻿@model Poke.Models.TrainerM
+@{
+    ViewData["Title"] = "DetailsTrainer";
+}
+<h1> ID Details Trainer</h1>
+<hr />
+<div class="card">
+    <div class="card-body">
+        <form class="row g-3" asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="col-md-4">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" readonly/>
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="col-md-3">
+                <label asp-for="Age" class="control-label"></label>
+                <input asp-for="Age" class="form-control" readonly/>
+                <span asp-validation-for="Age" class="text-danger"></span>
+            </div>
+            <div class="col-md-1">
+                <label asp-for="Hometown" class="control-label"></label>
+                <input asp-for="Hometown" class="form-control"readonly />
+                <span asp-validation-for="Hometown" class="text-danger"></span>
+            </div>
+            <div class="col-md-1">
+                <label asp-for="Region" class="control-label"></label>
+                <input asp-for="Region" class="form-control" readonly/>
+                <span asp-validation-for="Region" class="text-danger"></span>
+            </div>
+            <div class="col-md-3">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" readonly/>
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+             <div class="col-md-12" style="margin-top:15px">
+                        @{
+                            try
+                            {
+                                var base64 = Convert.ToBase64String(Model.Picture);
+                                if(!string.IsNullOrEmpty(base64))
+                                {
+                                    var Img = String.Format("data:image/png;base64,{0}", base64);
+                                    <img class="img-fluid" src="@Img" width="300" />
+                                }
+                            }
+                            catch
+                            {
+                                <img class="img-fluid" src="http://www.puspfc.usp.br/sistemas/prefeitura/imgs/sem_foto.png" width="150" style="margin-top:15px"/>
+                            }
+                        }
+            </div>
+            <div class="form-group" style="margin-top:15px">
+                <button type="button"  class="btn btn-info">Back<a class="bi bi-info-circle" asp-action="Home1"></a></button>
+            </div>
+        </form>
+    </div>
+    <style>
+
+header.header{
+    background-color: rgb(238, 9, 49);
+}
+ h1, h6, a, input, label, h3
+{
+    font-family: PoKeSolid;
+    color: rgb(19, 17, 18);
+}
+
+</style>
+
+</div>

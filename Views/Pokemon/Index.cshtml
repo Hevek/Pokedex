@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/assets/css/Poke.css" />
+    <title>Loading</title>
+</head>
+<body>
+
+    <div class="row">
+        <div class="col-md-6">
+    <div class="preload">
+        <img class="pika" src="~/assets/img/pikachu.gif" alt="" />
+        <h3> Loading... </h3>
+    </div>
+    </div>
+    </div>
+
+    <script src="~/js/app.js"></script>
+
+    <style>
+        header, footer{
+            visibility: hidden;
+        }
+        nav, h1
+        {
+            visibility: hidden;
+            z-index: -100;
+        }
+        aside.sidebar{
+            visibility: hidden;
+        }
+        
+    </style>
+    
+</body>
+</html> 
